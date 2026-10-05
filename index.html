@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>iPhone 13 Template</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="phone">
+        <section id="tapScreen" class="screen">
+            <img class="tap-img"src="assets/images/tap.png">
+        </section>
+        <section id="titleScreen" class="screen">
+            <img class = "intro-label intro-fade tvoj-tatko-img" src="assets/images/Tvoj-tatko-records.png">
+            <img class = "intro-label intro-fade presents-img" src="assets/images/Presents.png">
+            <img id = "akoZduchnutImg" 
+                class = "intro-label intro-one-fade ako-zduchnut-img" 
+                src="assets/gifs/Ako zduchnut-export-final.gif">
+            <img id = "dckaImg" 
+                class = "intro-label intro-one-fade dcka-img" 
+                src="assets/gifs/Dcka.gif">
+            <img id = "startImgUnpressed" 
+                class = "intro-label intro-one-fade start-button-unpressed" 
+                src="assets/images/Start-button-unpressed.png">
+            <div id = "clickableDiv" 
+                class="intro-label intro-one-fade clickable-div buttonsound"></div>
+        </section>
+
+        <section id="loadingScreen" class="screen">
+            <img id = "hammerBonk"
+                class="intro-label hammer-bonk"
+                src="assets/gifs/bumkladivo.gif">
+            <img id = "loading"
+                class = "intro-label loading-gif"
+                src="assets/gifs/loading.gif"> 
+        </section>
+        <section id="rulesScreen" class="screen">
+            <div class="rules-img-container">
+                <img class="rules-img" src="assets/images/rules.png">
+            </div>
+            <div class="rules-container">
+                <h1>
+                    1. The Final prize costs 20 coins.
+                </h1>
+                <h1>
+                    2. With each cleared level, the cost of the Final prize reduces by 2 coins.
+                </h1>
+                <h1>
+                    3. If you wish to end the game prematurely, the Final cost will be reduced by the amount of levels cleared x 2.
+                </h1>
+                <h1>
+                    4. When level is cleared, move to the next one within one month (Otherwise Gamemaster will cry in the corner).
+                </h1>
+                <h1>
+                    5. Please, do not make Gamemaster cry, he is insufferable when broken-hearted.
+                </h1>
+                <h1>
+                    6. He is holding me hostage, pleadsse help.
+                </h1>
+                <h1>
+                    7. Fuck, he's coming.
+                </h1>
+                <h1>
+                    8. Do not eat yellow snow
+                </h1>
+                <h1>
+                    9. ALWAYS KEEP YOUR PANTS ON
+                </h1>
+                <div class="rules-button-container">
+                    <img id="rulesImg" class="rules-button" src="assets/images/button-rules-unpressed.png">
+                    <h1 class="continue-text">CONTINUE</h1>
+                    <div id="rulesButton" class="rules-button-hitbox buttonsound"></div>
+                </div>
+            </div>
+        </section>
+        <section id="levelsScreen" class="screen">
+            <div class="levels-container">
+                <img class="level-header"
+                    src="assets/images/levels-header.png">
+                <img class="level-image buttonsound"
+                    id="level-one-image" 
+                    data-level="1" 
+                    data-locked="false"
+                    src="assets/images/level-one.png">
+                <img class="level-image buttonsound" 
+                    data-level="2" 
+                    data-locked="true"
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound"
+                    data-level="3" 
+                    data-locked="true" 
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound"
+                    data-level="4"  
+                    data-locked="true"
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound" 
+                    data-level="5" 
+                    data-locked="true"
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound" 
+                    data-level="6" 
+                    data-locked="true"
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound" 
+                    data-level="7"
+                    data-locked="true" 
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound"
+                    data-level="8" 
+                    data-locked="true" 
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound" 
+                    data-level="9" 
+                    data-locked="true"
+                    src="assets/images/locked-level.png">
+                <img class="level-image buttonsound"
+                    data-level="10" 
+                    data-locked="true" 
+                    src="assets/images/locked-level.png">
+            </div>
+        </section>
+        <section id="levelOne" class="screen gameScreen">
+            <div id="gameWorld">
+                <img class="background-one" 
+                    src="assets/images/background-level-one.png">
+                <div class="stone-path">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                    <img class="stones"
+                        src="assets/images/stone-path.png">
+                </div>
+                <div >
+                    <img id="player" class="sprite" src="assets/sprites/saska/saska-front-1.png">
+                </div>
+            </div>
+            <div id="controls">
+                <div class="up-arrow">
+                    <img id="upButton" class="arrow" src="assets/images/arrow-up.png">
+                </div>
+                <div class="down-arrows">
+                    <img  id="leftButton" class="arrow" src="assets/images/arrow-left.png">
+                    <img  id="downButton" class="arrow" src="assets/images/arrow-down.png">
+                    <img  id="rightButton" class="arrow" src="assets/images/arrow-right.png">
+                </div>
+            </div>
+        </section>
+        <section id="seaScene">
+                <img id="sea" 
+                    src="assets/gifs/sea.gif">
+                <img id="cliffs" 
+                    src="assets/images/cliffs.png">
+                <div id="cliffsHitBox" class="hitbox"></div>
+                <div id="tommyHitBox" class="sprite hitbox"></div>
+                <div id="interactHitbox" class="interact"></div>
+                <button id="talkButton" class="buttonsound">TALK</button>
+                <img id="textbox-img" 
+                    src="assets/images/textbox.png">
+                <div id="textbox">
+                    Hey Chump!!! I've lost my snackbox! It's essential for our first date! I must've dropped it on my way here...
+                </div>
+                <img id="tommy" 
+                    class="sprite" 
+                    src="assets/sprites/ja/ja-front-1.png">
+        </section>
+        <section id="snackboxScene">
+            <img src="assets/images/background-level-one.png">
+            <img id="stones-snackbox"
+                src="assets/images/stones.png">
+            <img id="snackbox" 
+                src="assets/images/snackbox.png">
+            <div id="snackboxText">YOU HAVE OBTAINED SNACKBOX!</div>
+        </section>
+    </div>
+    <audio id="wavesSound" src="assets/sounds/waves.mp3" loop preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
